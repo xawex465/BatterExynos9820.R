@@ -1846,7 +1846,7 @@ static int decon_set_dpp_config(struct decon_device *decon,
 #ifdef CONFIG_EXYNOS_MCD_HDR
 	int plane;
 	struct dma_buf *meta_dma_buf;
-	struct exynos_video_meta *video_meta;
+	struct exynos_video_meta *video_meta = NULL;
 #endif
 
 	/* 1 msec */
