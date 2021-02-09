@@ -3016,7 +3016,7 @@ ___update_load_avg(u64 now, int cpu, struct sched_avg *sa,
 	 * unfortunately does during sched clock init when we swap over to TSC.
 	 */
 	if ((s64)delta < 0) {
-		sa->last_update_time = now;
+		sa->last_update_time += delta << 10;
 		return 0;
 	}
 
