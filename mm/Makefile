@@ -117,4 +117,5 @@ obj-$(CONFIG_PAGE_BOOST_RECORDING) += io_record.o
 # and that the conversions specified in the format string make sense.
 CFLAGS_backing-dev.o = -Wformat
 CFLAGS_page-writeback.o = -Wformat
+CFLAGS_kmemleak.o += -DCONFIG_DEBUG_FS
 
