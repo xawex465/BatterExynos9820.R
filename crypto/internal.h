@@ -82,7 +82,7 @@ char *get_fips_functest_mode(void);
 #define SKC_FUNCTEST_NO_TEST "NO_TEST"
 #endif /* CONFIG_CRYPTO_FIPS_FUNC_TEST */
 #endif /* CONFIG_CRYPTO_FIPS */
-void __init crypto_init_proc(void);
+void crypto_init_proc(void);
 void __exit crypto_exit_proc(void);
 #else
 static inline void crypto_init_proc(void)
