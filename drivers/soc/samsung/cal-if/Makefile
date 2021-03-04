@@ -4,7 +4,7 @@
 
 # Object files in subdirectories
 
-obj-y					+= cal-if.o
+obj-y							+= cal-if.o
 obj-$(CONFIG_PMUCAL)			+= pmucal_system.o pmucal_local.o pmucal_cpu.o pmucal_rae.o
 obj-$(CONFIG_PMUCAL_DBG)		+= pmucal_dbg.o
 obj-$(CONFIG_FLEXPMU)			+= pmucal_powermode.o
@@ -24,6 +24,8 @@ obj-$(CONFIG_SOC_EXYNOS9810)            += exynos9810/cal_data.o
 
 ifndef CONFIG_SOC_EXYNOS9820_EVT0
 obj-$(CONFIG_SOC_EXYNOS9820)            += exynos9820/cal_data.o
+# not gonna even bother with this
+ccflags-y							+= $(call cc-disable-warning, sizeof-pointer-div)
 else
 obj-$(CONFIG_SOC_EXYNOS9820_EVT0)            += exynos9820_evt0/cal_data.o
 endif
