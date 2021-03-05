@@ -331,7 +331,7 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
 	raw_spin_unlock_irqrestore(&desc->lock, flags);
 
 	if (old_notify)
-                if (notify)
+        if (notify)
 			WARN(1, "overwriting previous IRQ affinity notifier\n");
 		kref_put(&old_notify->kref, old_notify->release);
 
