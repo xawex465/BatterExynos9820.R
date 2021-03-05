@@ -378,7 +378,7 @@ AS		= $(CROSS_COMPILE)as
 LD		= $(CROSS_COMPILE)ld
 LDGOLD		= $(CROSS_COMPILE)ld.gold
 #CC		= $(CROSS_COMPILE)gcc
-CC              = $(srctree)/toolchain/clang/host/linux-x86/clang-4639204-cfp-jopp/bin/clang
+CC              = $(srctree)/toolchain/clang/host/linux-x86/clang-r399163b/bin/clang
 CPP		= $(CC) -E
 AR		= $(CROSS_COMPILE)ar
 NM		= $(CROSS_COMPILE)nm
@@ -516,7 +516,7 @@ endif
 ifeq ($(cc-name),clang)
 ifneq ($(CROSS_COMPILE),)
 #CLANG_TRIPLE	?= $(CROSS_COMPILE)
-CLANG_TRIPLE	?= $(srctree)/toolchain/clang/host/linux-x86/clang-4639204-cfp-jopp/bin/aarch64-linux-gnu-
+CLANG_TRIPLE	?= $(srctree)/toolchain/clang/host/linux-x86/clang-r399163b/bin/aarch64-linux-gnu-
 CLANG_FLAGS	:= --target=$(notdir $(CLANG_TRIPLE:%-=%))
 GCC_TOOLCHAIN_DIR := $(dir $(shell which $(CROSS_COMPILE)elfedit))
 CLANG_FLAGS	+= --prefix=$(GCC_TOOLCHAIN_DIR)
