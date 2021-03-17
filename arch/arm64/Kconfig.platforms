@@ -336,6 +336,10 @@ config 9820_DTS_BEYOND2
 	bool "Beyond2lte DTS"
 	depends on SOC_EXYNOS9820
 
+config 9820_DTS_BEYOND1
+	bool "Beyond1lte DTS"
+	depends on SOC_EXYNOS9820
+
 config 9820_DTS_BEYOND0
 	bool "Beyond0lte DTS"
 	depends on SOC_EXYNOS9820

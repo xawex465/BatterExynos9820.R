@@ -17,7 +17,15 @@ dtbo-$(CONFIG_9820_DTS_BEYOND0) += samsung/exynos9820-beyond0lte_eur_open_19.dtb
 dtbo-$(CONFIG_9820_DTS_BEYOND0) += samsung/exynos9820-beyond0lte_eur_open_24.dtbo
 dtbo-$(CONFIG_9820_DTS_BEYOND0) += samsung/exynos9820-beyond0lte_eur_open_25.dtbo
 dtbo-$(CONFIG_9820_DTS_BEYOND0) += samsung/exynos9820-beyond0lte_eur_open_20.dtbo
-
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_17.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_18.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_19.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_20.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_21.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_22.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_23.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_24.dtbo
+dtbo-$(CONFIG_9820_DTS_BEYOND1) += samsung/exynos9820-beyond1lte_eur_open_26.dtbo
 dtb-y += exynos/exynos9820.dtb
 
 targets += dtbs
