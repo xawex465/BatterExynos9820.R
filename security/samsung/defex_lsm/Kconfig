@@ -1,6 +1,6 @@
 config SECURITY_DEFEX
 	bool "Defex Support"
-	depends on SECURITY
+	depends on SECURITY && (!KCOV || SAMSUNG_PRODUCT_SHIP)
 	select CRYPTO
 	select CRYPTO_RSA
 	select CRYPTO_SHA1
